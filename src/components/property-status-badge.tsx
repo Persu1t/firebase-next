@@ -10,10 +10,10 @@ const statusLabel = {
     
 }
 
-const variant: {[key: string]: "primary" | "destructive" | "secondry" | "success"} = {
+const variant: {[key: string]: "primary" | "destructive" | "secondary" | "success"} = {
     "for-sale": "primary",
     withdrawn: "destructive",
-    draft: "secondry",
+    draft: "secondary",
     sold: "success"
 }
 
