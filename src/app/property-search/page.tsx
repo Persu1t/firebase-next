@@ -14,6 +14,7 @@ import { getUserFavourites } from '@/data/favourites'
 import { auth } from '@/firebase/server'
 import { cookies } from 'next/headers'
 import { DecodedIdToken } from 'firebase-admin/auth'
+import AskWithAI from './ask-with-ai'
 
 const PropertySearch = async ({ searchParams }: { searchParams: any }) => {
     const searchParamsValues = await searchParams;
@@ -55,9 +56,12 @@ const PropertySearch = async ({ searchParams }: { searchParams: any }) => {
                 Property Search
             </h1>
             <Card>
-                <CardHeader>
+                <CardHeader className='flex flex-row justify-between'>
                     <CardTitle>
                         Filters
+                    </CardTitle>
+                    <CardTitle>
+                        <AskWithAI/>
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
