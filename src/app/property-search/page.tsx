@@ -70,7 +70,7 @@ const PropertySearch = async ({ searchParams }: { searchParams: any }) => {
                     </Suspense>
                 </CardContent>
             </Card>
-            <div className='grid grid-cols-3 mt-5 gap-5'>
+            <div className='grid grid-cols-2 mt-5 gap-5 lg:grid-cols-3'>
                 {data.map((property)=>{
                     const addressLines = [property.address1, property.address2, property.city, property.state, property.postcode].filter(addressLine => !!addressLine).join(", ")
                     return (

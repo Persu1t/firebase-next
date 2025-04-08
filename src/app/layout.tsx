@@ -33,8 +33,8 @@ export default function RootLayout({
 
       
         <nav className="bg-sky-950 text-white p-5 h-24 flex items-center justify-between z-10 relative">
-          <Link href="/" className="text-3xl tracking-widest flex gap-2 items-center">
-          <HomeIcon/>
+          <Link href="/" className="text-xl tracking-widest flex gap-2 items-center md:text-2xl lg:text-3xl">
+          <HomeIcon className="hidden md:block"/>
             <span className="uppercase">Fire Homes</span>
           </Link>
           <ul className="flex gap-6 items-center">

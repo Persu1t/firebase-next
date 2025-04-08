@@ -57,9 +57,9 @@ const AskWithAI = () => {
             ))}
         </AlertDialogDescription>
       </AlertDialogHeader>
-      <AlertDialogFooter>
-        <Input value={chat} onChange={e => setChat(e.target.value)}/>
+      <AlertDialogFooter className='md:flex md:flex-row-reverse'>
         <Button onClick={handleClick}>Send</Button>
+        <Input value={chat} onChange={e => setChat(e.target.value)}/>
       </AlertDialogFooter>
     </AlertDialogContent>
   </AlertDialog>
